@@ -1,8 +1,8 @@
 class Tokenfetch < Formula
   desc "Fetch-style summary of Claude Code token usage and cost"
   homepage "https://github.com/fffelix-huang/tokenfetch"
-  url "https://github.com/fffelix-huang/tokenfetch/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "44985b7246e73b4c1a8097af352c06b6acae021c430dd05b4f51aaf623e6820d"
+  url "https://github.com/fffelix-huang/tokenfetch/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "2819609d24dcd809dc38d66cc33e9fd4397cc7c2bb818470791df9d4c87b7df0"
   license "MIT"
   head "https://github.com/fffelix-huang/tokenfetch.git", branch: "master"
 
