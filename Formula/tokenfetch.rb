@@ -1,8 +1,8 @@
 class Tokenfetch < Formula
   desc "Tokenfetch gives summary of Claude Code token usage and estimated API cost."
   homepage "https://github.com/fffelix-huang/tokenfetch"
-  url "https://github.com/fffelix-huang/tokenfetch/archive/refs/tags/v0.3.0.tar.gz"
-  sha256 "9b24a7bd1067fcaca1134efae1fd97d7208211d4056f30a0bbbe7314e942e383"
+  url "https://github.com/fffelix-huang/tokenfetch/archive/refs/tags/v0.4.0.tar.gz"
+  sha256 "0ba249b2dd571cddf6c208141d25353e9dafeb5148a876417f20c22a07ec9a67"
   license "MIT"
   head "https://github.com/fffelix-huang/tokenfetch.git", branch: "master"
 
@@ -22,6 +22,7 @@ class Tokenfetch < Formula
       -X main.revision=#{tap.user}
     ]
     system "go", "build", *std_go_args(ldflags:), "./cmd/tokenfetch"
+    generate_completions_from_executable(bin/"tokenfetch", shell_parameter_format: :flag)
   end
 
   test do
